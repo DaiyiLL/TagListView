@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 @objc public protocol TagListViewDelegate {
     @objc optional func tagPressed(_ title: String, tagView: TagView, sender: TagListView) -> Void
     @objc optional func tagRemoveButtonPressed(_ title: String, tagView: TagView, sender: TagListView) -> Void
@@ -334,8 +336,8 @@ open class TagListView: UIView {
         return CGSize(width: frame.width, height: height)
     }
     
-    private func createNewTagView(_ title: String) -> TagView {
-        let tagView = TagView(title: title)
+    private func createNewTagView(_ tag: TagModelable) -> TagView {
+        let tagView = TagView(tag: tag)
         
         tagView.textColor = textColor
         tagView.selectedTextColor = selectedTextColor
@@ -368,14 +370,14 @@ open class TagListView: UIView {
     }
 
     @discardableResult
-    open func addTag(_ title: String) -> TagView {
+    open func addTag(_ tag: TagModelable) -> TagView {
         defer { rearrangeViews() }
-        return addTagView(createNewTagView(title))
+        return addTagView(createNewTagView(tag))
     }
     
     @discardableResult
-    open func addTags(_ titles: [String]) -> [TagView] {
-        return addTagViews(titles.map(createNewTagView))
+    open func addTags(_ tags: [TagModelable]) -> [TagView] {
+        return addTagViews(tags.map(createNewTagView))
     }
     
     @discardableResult
@@ -398,8 +400,8 @@ open class TagListView: UIView {
     }
 
     @discardableResult
-    open func insertTag(_ title: String, at index: Int) -> TagView {
-        return insertTagView(createNewTagView(title), at: index)
+    open func insertTag(_ tag: TagModelable, at index: Int) -> TagView {
+        return insertTagView(createNewTagView(tag), at: index)
     }
     
 
@@ -412,12 +414,12 @@ open class TagListView: UIView {
         return tagView
     }
     
-    open func setTitle(_ title: String, at index: Int) {
-        tagViews[index].titleLabel?.text = title
+    open func setTitle(_ tag: TagModelable, at index: Int) {
+        tagViews[index].tagModel = tag
     }
     
-    open func removeTag(_ title: String) {
-        tagViews.reversed().filter({ $0.currentTitle == title }).forEach(removeTagView)
+    open func removeTag(_ tag: TagModelable) {
+        tagViews.reversed().filter({ $0.tagModel?.tagId == tag.tagId }).forEach(removeTagView)
     }
     
     open func removeTagView(_ tagView: TagView) {

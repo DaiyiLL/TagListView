@@ -8,6 +8,30 @@
 
 import UIKit
 
+ public protocol TagModelable {
+    var title: String { get set }
+    var tagId: String { get set }
+}
+
+extension String: TagModelable {
+    public var title: String {
+        get {
+            return self
+        }
+        set {
+//            self = newValue
+        }
+    }
+    public var tagId: String {
+        get {
+            return self
+        }
+        set {
+//            self = newValue
+        }
+    }
+}
+
 @IBDesignable
 open class TagView: UIButton {
 
@@ -87,6 +111,12 @@ open class TagView: UIButton {
         }
     }
     
+    open var tagModel: TagModelable? {
+        didSet {
+            setTitle(self.tagModel?.title, for: UIControl.State())
+        }
+    }
+    
     private func reloadStyles() {
         if isHighlighted {
             if let highlightedBackgroundColor = highlightedBackgroundColor {
@@ -160,9 +190,10 @@ open class TagView: UIButton {
         setupView()
     }
     
-    public init(title: String) {
+    public init(tag: TagModelable) {
         super.init(frame: CGRect.zero)
-        setTitle(title, for: UIControl.State())
+        setTitle(tag.title, for: UIControl.State())
+        self.tagModel = tag
         
         setupView()
     }

@@ -14,24 +14,9 @@
 		1A6076C91AFED303009EA00E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6076C71AFED303009EA00E /* LaunchScreen.xib */; };
 		1A6076DF1AFED38F009EA00E /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6076DE1AFED38F009EA00E /* TagView.swift */; };
 		1A6076E31AFED866009EA00E /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6076E21AFED866009EA00E /* TagListView.swift */; };
-		1AD1770B1B6D73E70081F615 /* TagListView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD176F41B6D73E70081F615 /* TagListView.framework */; };
-		1AD1770C1B6D73E70081F615 /* TagListView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD176F41B6D73E70081F615 /* TagListView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1AD177141B6D74570081F615 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6076DE1AFED38F009EA00E /* TagView.swift */; };
-		1AD177151B6D745B0081F615 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6076E21AFED866009EA00E /* TagListView.swift */; };
-		90A878531BA1EBA1001C8989 /* TagListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A878521BA1EBA1001C8989 /* TagListView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D734B9DB89E1A45A9F57CAB6 /* Pods_TagListViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9CF9B79B50899CB16D6D5D0 /* Pods_TagListViewDemo.framework */; };
 		FFBD46391C6E1AA60045684A /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD46381C6E1AA60045684A /* CloseButton.swift */; };
-		FFBD463A1C6E1AB50045684A /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD46381C6E1AA60045684A /* CloseButton.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1AD177091B6D73E70081F615 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1A6076B11AFED303009EA00E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1AD176F31B6D73E70081F615;
-			remoteInfo = TagListView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1AD177121B6D73E70081F615 /* Embed Frameworks */ = {
@@ -40,7 +25,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1AD1770C1B6D73E70081F615 /* TagListView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,9 +41,11 @@
 		1A6076C81AFED303009EA00E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1A6076DE1AFED38F009EA00E /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TagView.swift; path = TagListView/TagView.swift; sourceTree = SOURCE_ROOT; };
 		1A6076E21AFED866009EA00E /* TagListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TagListView.swift; path = TagListView/TagListView.swift; sourceTree = SOURCE_ROOT; };
-		1AD176F41B6D73E70081F615 /* TagListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TagListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AD176F71B6D73E70081F615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		90A878521BA1EBA1001C8989 /* TagListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagListView.h; sourceTree = "<group>"; };
+		592684E069CC665EA1A1F69A /* Pods-TagListView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TagListView.debug.xcconfig"; path = "Target Support Files/Pods-TagListView/Pods-TagListView.debug.xcconfig"; sourceTree = "<group>"; };
+		65E8028ED7CB7893EDEC5674 /* Pods-TagListViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TagListViewDemo.release.xcconfig"; path = "Target Support Files/Pods-TagListViewDemo/Pods-TagListViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B3183BD1DB26BF34B3C8EAF9 /* Pods-TagListView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TagListView.release.xcconfig"; path = "Target Support Files/Pods-TagListView/Pods-TagListView.release.xcconfig"; sourceTree = "<group>"; };
+		D9CF9B79B50899CB16D6D5D0 /* Pods_TagListViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TagListViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F370CEACC70AAEB803D2B5ED /* Pods-TagListViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TagListViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-TagListViewDemo/Pods-TagListViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		FFBD46381C6E1AA60045684A /* CloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CloseButton.swift; path = ../TagListView/CloseButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,14 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AD1770B1B6D73E70081F615 /* TagListView.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1AD176F01B6D73E70081F615 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D734B9DB89E1A45A9F57CAB6 /* Pods_TagListViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,8 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				1A6076BB1AFED303009EA00E /* TagListViewDemo */,
-				1AD176F51B6D73E70081F615 /* TagListView */,
 				1A6076BA1AFED303009EA00E /* Products */,
+				40F374AC48889FC3B37A0205 /* Pods */,
+				31DF232536D444B935B354EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				1A6076B91AFED303009EA00E /* TagListViewDemo.app */,
-				1AD176F41B6D73E70081F615 /* TagListView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,73 +111,47 @@
 			name = TagListView;
 			sourceTree = "<group>";
 		};
-		1AD176F51B6D73E70081F615 /* TagListView */ = {
+		31DF232536D444B935B354EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				90A878521BA1EBA1001C8989 /* TagListView.h */,
-				1AD176F61B6D73E70081F615 /* Supporting Files */,
+				D9CF9B79B50899CB16D6D5D0 /* Pods_TagListViewDemo.framework */,
 			);
-			path = TagListView;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1AD176F61B6D73E70081F615 /* Supporting Files */ = {
+		40F374AC48889FC3B37A0205 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1AD176F71B6D73E70081F615 /* Info.plist */,
+				592684E069CC665EA1A1F69A /* Pods-TagListView.debug.xcconfig */,
+				B3183BD1DB26BF34B3C8EAF9 /* Pods-TagListView.release.xcconfig */,
+				F370CEACC70AAEB803D2B5ED /* Pods-TagListViewDemo.debug.xcconfig */,
+				65E8028ED7CB7893EDEC5674 /* Pods-TagListViewDemo.release.xcconfig */,
 			);
-			name = "Supporting Files";
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		1AD176F11B6D73E70081F615 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				90A878531BA1EBA1001C8989 /* TagListView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1A6076B81AFED303009EA00E /* TagListViewDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A6076D81AFED303009EA00E /* Build configuration list for PBXNativeTarget "TagListViewDemo" */;
 			buildPhases = (
+				04A14FEE52E67962EFC4DA6F /* [CP] Check Pods Manifest.lock */,
 				1A6076B51AFED303009EA00E /* Sources */,
 				1A6076B61AFED303009EA00E /* Frameworks */,
 				1A6076B71AFED303009EA00E /* Resources */,
 				1AD177121B6D73E70081F615 /* Embed Frameworks */,
+				8C301D30EBC1D718A37A4063 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1AD1770A1B6D73E70081F615 /* PBXTargetDependency */,
 			);
 			name = TagListViewDemo;
 			productName = TagListViewDemo;
 			productReference = 1A6076B91AFED303009EA00E /* TagListViewDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		1AD176F31B6D73E70081F615 /* TagListView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1AD177111B6D73E70081F615 /* Build configuration list for PBXNativeTarget "TagListView" */;
-			buildPhases = (
-				1AD176EF1B6D73E70081F615 /* Sources */,
-				1AD176F01B6D73E70081F615 /* Frameworks */,
-				1AD176F11B6D73E70081F615 /* Headers */,
-				1AD176F21B6D73E70081F615 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TagListView;
-			productName = TagListView;
-			productReference = 1AD176F41B6D73E70081F615 /* TagListView.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -212,10 +165,6 @@
 				TargetAttributes = {
 					1A6076B81AFED303009EA00E = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 1020;
-					};
-					1AD176F31B6D73E70081F615 = {
-						CreatedOnToolsVersion = 6.4;
 						LastSwiftMigration = 1020;
 					};
 				};
@@ -234,7 +183,6 @@
 			projectRoot = "";
 			targets = (
 				1A6076B81AFED303009EA00E /* TagListViewDemo */,
-				1AD176F31B6D73E70081F615 /* TagListView */,
 			);
 		};
 /* End PBXProject section */
@@ -250,14 +198,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AD176F21B6D73E70081F615 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04A14FEE52E67962EFC4DA6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TagListViewDemo-checkManifestLockResult.txt",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		8C301D30EBC1D718A37A4063 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TagListViewDemo/Pods-TagListViewDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagListView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TagListViewDemo/Pods-TagListViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A6076B51AFED303009EA00E /* Sources */ = {
@@ -272,25 +256,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AD176EF1B6D73E70081F615 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FFBD463A1C6E1AB50045684A /* CloseButton.swift in Sources */,
-				1AD177141B6D74570081F615 /* TagView.swift in Sources */,
-				1AD177151B6D745B0081F615 /* TagListView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1AD1770A1B6D73E70081F615 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1AD176F31B6D73E70081F615 /* TagListView */;
-			targetProxy = 1AD177091B6D73E70081F615 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1A6076C21AFED303009EA00E /* Main.storyboard */ = {
@@ -422,6 +388,7 @@
 		};
 		1A6076D91AFED303009EA00E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F370CEACC70AAEB803D2B5ED /* Pods-TagListViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TagListViewDemo/Info.plist;
@@ -434,6 +401,7 @@
 		};
 		1A6076DA1AFED303009EA00E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65E8028ED7CB7893EDEC5674 /* Pods-TagListViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TagListViewDemo/Info.plist;
@@ -442,53 +410,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		1AD1770D1B6D73E70081F615 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TagListView/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "build.ela.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1AD1770E1B6D73E70081F615 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = TagListView/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "build.ela.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -509,15 +430,6 @@
 			buildConfigurations = (
 				1A6076D91AFED303009EA00E /* Debug */,
 				1A6076DA1AFED303009EA00E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1AD177111B6D73E70081F615 /* Build configuration list for PBXNativeTarget "TagListView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1AD1770D1B6D73E70081F615 /* Debug */,
-				1AD1770E1B6D73E70081F615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
