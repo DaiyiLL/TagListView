@@ -135,6 +135,7 @@ open class TagView: UIButton {
             layer.borderColor = borderColor?.cgColor
             setTitleColor(textColor, for: UIControl.State())
         }
+        removeButton.isSelected = isSelected
     }
     
     override open var isHighlighted: Bool {
