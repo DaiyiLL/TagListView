@@ -17,6 +17,8 @@ class ViewController: UIViewController, TagListViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tagListView.removeIconNormalLineColor = UIColor.red
+        tagListView.removeIconSelectedLineColor = UIColor.white
         tagListView.delegate = self
         tagListView.addTag("TagListView")
         tagListView.addTag("TEAChart")

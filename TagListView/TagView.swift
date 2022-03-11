@@ -173,7 +173,17 @@ open class TagView: UIButton {
             removeButton.lineWidth = removeIconLineWidth
         }
     }
-    @IBInspectable open var removeIconLineColor: UIColor = UIColor.white.withAlphaComponent(0.54) {
+    @IBInspectable open var removeIconSelectedLineColor: UIColor = UIColor.white {
+        didSet {
+            removeButton.selectedLineColor = removeIconSelectedLineColor
+        }
+    }
+    @IBInspectable open var removeIconNormalLineColor: UIColor = UIColor.white {
+        didSet {
+            removeButton.normalLineColor = removeIconNormalLineColor
+        }
+    }
+    @IBInspectable open var removeIconLineColor: UIColor = UIColor.white {
         didSet {
             removeButton.lineColor = removeIconLineColor
         }

@@ -197,6 +197,22 @@ open class TagListView: UIView {
             }
         }
     }
+    @IBInspectable open dynamic var removeIconNormalLineColor: UIColor = UIColor.white {
+        didSet {
+            defer { rearrangeViews() }
+            tagViews.forEach {
+                $0.removeIconNormalLineColor = removeIconNormalLineColor
+            }
+        }
+    }
+    @IBInspectable open dynamic var removeIconSelectedLineColor: UIColor = UIColor.white {
+        didSet {
+            defer { rearrangeViews() }
+            tagViews.forEach {
+                $0.removeIconSelectedLineColor = removeIconSelectedLineColor
+            }
+        }
+    }
     
     @objc open dynamic var textFont: UIFont = .systemFont(ofSize: 12) {
         didSet {
@@ -356,6 +372,8 @@ open class TagListView: UIView {
         tagView.removeButtonIconSize = removeButtonIconSize
         tagView.enableRemoveButton = enableRemoveButton
         tagView.removeIconLineColor = removeIconLineColor
+        tagView.removeIconNormalLineColor = removeIconNormalLineColor
+        tagView.removeIconSelectedLineColor = removeIconSelectedLineColor
         tagView.addTarget(self, action: #selector(tagPressed(_:)), for: .touchUpInside)
         tagView.removeButton.addTarget(self, action: #selector(removeButtonPressed(_:)), for: .touchUpInside)
         
